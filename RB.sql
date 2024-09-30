@@ -1,0 +1,32 @@
+-- use rb;
+-- CREATE TABLE Users (
+--     user_id INT AUTO_INCREMENT PRIMARY KEY,
+--     username VARCHAR(50) NOT NULL,
+--     email VARCHAR(100) NOT NULL UNIQUE,
+--     password VARCHAR(100) NOT NULL,
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
+
+-- CREATE TABLE Categories (
+--     category_id INT AUTO_INCREMENT PRIMARY KEY,
+--     category_name VARCHAR(50) NOT NULL UNIQUE
+-- );
+-- CREATE TABLE Courses (
+--     course_id INT AUTO_INCREMENT PRIMARY KEY,
+--     title VARCHAR(255) NOT NULL,
+--     description TEXT,
+--     price DECIMAL(10, 2) NOT NULL,
+--     category_id INT,
+--     FOREIGN KEY (category_id) REFERENCES Categories(category_id),
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+-- CREATE TABLE Testimonials (
+--     testimonial_id INT AUTO_INCREMENT PRIMARY KEY,
+--     user_id INT,
+--     course_id INT,
+--     testimonial_text TEXT NOT NULL,
+--     FOREIGN KEY (user_id) REFERENCES Users(user_id),
+--     FOREIGN KEY (course_id) REFERENCES Courses(course_id),
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
+
