@@ -1,9 +1,9 @@
 // routes.js
 const express = require('express');
-const userController = require('./controllers/userController');
-const categoryController = require('./controllers/categoryController');
-const courseController = require('./controllers/courseController');
-const testimonialController = require('./controllers/testimonialController');
+const userController = require('../controllers/UserController');
+const categoryController = require('../controllers/CategoryController');
+const courseController = require('../controllers/CourseController');
+const testimonialController = require('../controllers/TestimonialController');
 
 const router = express.Router();
 

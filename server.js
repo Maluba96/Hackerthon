@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'The Resource Blog')));
 
 // Example Route for API (you'll add more)
-app.use('/api', require('./routes'));
+app.use('/api', require('./routes/routes'));
 
 // Start the server
 app.listen(3006, () => {
